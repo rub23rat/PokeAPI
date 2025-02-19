@@ -1,1 +1,10 @@
-<h1>Funciona el HTML</h1>
+<div class="card">
+    <div class="card2">
+        <img [src]="imagen" [alt]="'imagen de ' + pokemon" width="180" height="234">
+    </div>
+  </div>
+<h1>{{pokemon}}</h1>
+@for (hability of habilities; track $index){
+    <p>{{hability}}</p>
+}
+<button (click)="clickName.emit('botón clicado')">Botón</button>
