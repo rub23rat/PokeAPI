@@ -2,32 +2,42 @@
   display: inline-block;
   padding-left: 20px;
 }
+
 img {
-  border-radius: 20px;
-  margin-top: 4px;
+  max-width: 190px;
+  max-height: 240px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* From Uiverse.io by LightAndy1 */ 
+
 .package {
   width: 200px;
   height: 254px;
-  background-image: linear-gradient(163deg, #ff00ff 0%, #3700ff 100%);
+  background-image: linear-gradient(153deg, #ffcc01 0%, #2575bb 100%);
   border-radius: 20px;
   text-align: center;
   transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .package:hover {
-  box-shadow: 0px 0px 30px 1px rgba(204, 0, 255, 0.3);
+  box-shadow: 0px 0px 30px 1px rgba(255, 251, 0, 0.596);
 }
 
 .package2 {
   width: 198px;
   height: 252px;
-  background-color: #e8e8e8;
+  background-color: white;
   border-radius: 10px;
   transition: all 0.25s cubic-bezier(0, 0, 0, 1);
   padding: 1px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .package2:hover {
