@@ -1,7 +1,15 @@
+<app-paginator (nextPage)="nextPage()" (prevPage)="prevPage()" />
 @for(pokemon of pokemons; track $index){
     <app-pokemon-detail 
     [pokemon]="pokemon.name" 
-    [imagen]="pokemon.src" 
+    [imagen]="'https://img.pokemondb.net/artwork/large/' + pokemon.name + '.jpg'" 
     [habilities] = "pokemon.habilities"
     (clickName)="clickName($event)" />
 }
+
+<!--@for(pokemon of pokemons; track $index){
+    <pre>
+        {{ pokemon | json }}
+    </pre>
+}
+-->

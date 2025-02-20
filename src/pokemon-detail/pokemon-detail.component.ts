@@ -5,7 +5,6 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
   imports: [],
   templateUrl: `./pokemon-detail.component.html`,
   styleUrl: './pokemon-detail.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PokemonDetailComponent {
   @Input() pokemon: string = '';
