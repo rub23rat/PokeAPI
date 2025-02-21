@@ -1,5 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 body{
-  background-color: #e8e8e8;
   text-align: center;
+  background: #ffcc01; /* Fallback for browsers that don't support gradients */
+  background: linear-gradient(
+    135deg,
+    #ffcc01 25%,
+    #2575bb 25%,
+    #2575bb 50%,
+    #ffcc01 50%,
+    #ffcc01 75%,
+    #2575bb 75%,
+    #2575bb
+  );
+  background-size: 40px 40px;
+
+  /* Animation */
+  animation: move 4s linear infinite;
 } 
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}

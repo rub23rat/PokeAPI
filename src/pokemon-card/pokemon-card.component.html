@@ -3,11 +3,17 @@
         <img [src]="imagen" [alt]="'imagen de ' + pokemon" width="180" height="234">
     </div>
   </div> -->
-  <div class="package">
-    <div class="package2"><img [src]="imagen" [alt]="'imagen de ' + pokemon"></div>
+  <div class="card">
+    <div id="cardnewfilter"><p>NEW</p></div>
+    <div id="cardbrightfilter"></div>
+    <div id="cardtop">
+      <img [src]="imagen" [alt]="'imagen de ' + pokemon">
+    </div>
+    <div id="cardbottom">
+      <p id="cardbottomtitle">{{pokemon}}</p>
+      <button (click)="clickName.emit(pokemon)">Ver pokemon</button>
+    </div>
   </div>
-<h1>{{pokemon}}</h1>
 <!-- @for (hability of habilities; track $index){
     <p>{{hability}}</p>
 } -->
-<button (click)="clickName.emit(pokemon)">Ver pokemon</button>
