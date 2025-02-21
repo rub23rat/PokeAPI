@@ -9,6 +9,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 25px;
 }
 
 .package {
@@ -42,7 +43,7 @@ img {
 
 .package2:hover {
   transform: scale(0.98);
-  border-radius: 18px;
+  border-radius: 48px;
 }
 
 .text {

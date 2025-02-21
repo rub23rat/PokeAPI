@@ -10,6 +10,13 @@ export class PokemonServiceService {
 
   //TODO: cambiar any
   getPokemonList(): Observable<any> {
-    return this.http.get('https://pokeapi.co/api/v2/pokemon?limit=150');
+    return this.http.get('https://pokeapi.co/api/v2/pokemon?limit=16');
+  }
+  changePage(url: string): Observable<any> {
+    return this.http.get(url);
+  }
+
+  getPokemonDetail(pokemonId: string): Observable<any>{
+    return this.http.get(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`);
   }
 }

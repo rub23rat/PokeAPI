@@ -7,7 +7,7 @@
     <div class="package2"><img [src]="imagen" [alt]="'imagen de ' + pokemon"></div>
   </div>
 <h1>{{pokemon}}</h1>
-@for (hability of habilities; track $index){
+<!-- @for (hability of habilities; track $index){
     <p>{{hability}}</p>
-}
-<button (click)="clickName.emit('botón clicado')">Botón</button>
+} -->
+<button (click)="clickName.emit(pokemon)">Ver pokemon</button>
